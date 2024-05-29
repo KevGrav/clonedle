@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import store from './redux/reducers/store';
 import App from './App';
 import './styles/App.css';
-import './index.css';  // Add this if you have global styles
+import './styles/index.css';  // Add this if you have global styles
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
