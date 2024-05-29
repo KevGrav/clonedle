@@ -1,0 +1,77 @@
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: purple;
+  }
+  /* Container styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  /* GameBoard styles */
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .game-board .tile {
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: 2px solid #DCDCDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  /* HomeScreen styles */
+  .home-screen {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .home-screen h1 {
+    font-size: 48px;
+    color: #333;
+  }
+  .home-screen button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .home-screen button:hover {
+    background-color: #0056B3;
+  }
+  /* Keyboard styles */
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .keyboard .key {
+    width: 50px;
+    height: 50px;
+    background-color: #DCDCDC;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .keyboard .key:hover {
+    background-color: #bbb;
+  }
