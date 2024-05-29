@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/clonedle/static/css/main.e665b245.css",
+    "main.css": "/clonedle/static/css/main.b27b6de0.css",
     "main.js": "/clonedle/static/js/main.d76790d9.js",
     "index.html": "/clonedle/index.html",
-    "main.e665b245.css.map": "/clonedle/static/css/main.e665b245.css.map",
+    "main.b27b6de0.css.map": "/clonedle/static/css/main.b27b6de0.css.map",
     "main.d76790d9.js.map": "/clonedle/static/js/main.d76790d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e665b245.css",
+    "static/css/main.b27b6de0.css",
     "static/js/main.d76790d9.js"
   ]
 }
