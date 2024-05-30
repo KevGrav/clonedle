@@ -8,7 +8,9 @@ const HomeScreen = () => {
   };
   return (
     <div className="home-screen">
-      <h1>Clone-dle</h1>
+      <h1>Welcome to Clone-dle</h1>
+      <h3> Please select your level of difficulty</h3>
+      
       <div className="level-selection">
         <button onClick={() => handleLevelSelect('easy')}>Easy (3-letter words)</button>
         <button onClick={() => handleLevelSelect('medium')}>Medium (5-letter words)</button>

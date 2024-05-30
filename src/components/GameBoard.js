@@ -33,6 +33,7 @@ const GameBoard = () => {
   };
   return (
     <div className="game-board">
+    <h1>Welcome to Clonedle </h1>  
       {renderMessage()}
       <div className="word-grid">
         {guesses.map((guess, index) => (

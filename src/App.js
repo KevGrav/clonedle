@@ -11,6 +11,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomeScreen />} />
+          
           <Route path="/game/:level" element={<GameBoard />} />
         </Routes>
       </div>
