@@ -3,7 +3,7 @@ body, html, #root {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: purple;
+    background-color: lightskyblue
   }
   /* Container styles */
   .container {
@@ -55,10 +55,10 @@ body, html, #root {
   }
   /* Keyboard styles */
   .keyboard {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 10px;
-    margin-top: 20px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
   }
   .keyboard .key {
     width: 50px;
@@ -71,6 +71,7 @@ body, html, #root {
     align-items: center;
     font-size: 18px;
     cursor: pointer;
+    text-transform: uppercase;
   }
   .keyboard .key:hover {
     background-color: #bbb;
