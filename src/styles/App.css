@@ -1,78 +1,40 @@
-body, html, #root {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: lightskyblue
-  }
-  /* Container styles */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  /* GameBoard styles */
-.game-board {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-.game-board .tile {
-    width: 80px;
-    height: 60px;
-    background-color: #FFFFFF;
-    border: 2px solid #DCDCDC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  /* HomeScreen styles */
-.home-screen {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-.home-screen h1 {
-    font-size: 48px;
-    color: #333;
-  }
-.home-screen button {
-    padding: 10px 20px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-.home-screen button:hover {
-    background-color: #0056B3;
-  }
-  /* Keyboard styles */
-.keyboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-.keyboard .key {
-    width: 50px;
-    height: 50px;
-    background-color: #DCDCDC;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-.keyboard .key:hover {
-    background-color: #bbb;
-  }
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lpBtn1 .lpBtn2 .lpBtn3 {
+  width: 250px;
+  height: 100px;
+  margin: 10px;
+  background-color: #3a3a3c;
+  color: #d11616;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.lpBtn:active {
+  background-color: #57575a;
+}

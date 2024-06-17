@@ -1,21 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomeScreen from './components/HomeScreen';
-import GameBoard from './components/GameBoard';
-import './styles/index.css';
+import { GameProvider } from './context/GameContext';
+import LandingPage from './components/LandingPage';
+import Game from './components/Game';
 import './styles/App.css';
-
+import './styles/Modal.css'; // Add this line to include Modal styles
 function App() {
+  const [gameLevel, setGameLevel] = React.useState(null);
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          
-          <Route path="/game/:level" element={<GameBoard />} />
-        </Routes>
+    <GameProvider>
+      <div className="app">
+        <h1>Clone-dle</h1>
+        {gameLevel ? (
+          <Game level={gameLevel} />
+        ) : (
+          <LandingPage setGameLevel={setGameLevel} />
+        )}
       </div>
-    </Router>
+    </GameProvider>
   );
 }
 export default App;

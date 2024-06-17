@@ -1,24 +1,52 @@
 .keyboard {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 20px;
-    }
-.keys {
+  }
+  
+.keyboard-line {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 10px;
-    }
-.keys button {
+  }
+  
+.key {
+    width: 50px;
+    height: 50px;
     margin: 5px;
-    padding: 10px;
-    font-size: 16px;
+    background-color: #3a3a3c;
+    color: #ffffff;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
     cursor: pointer;
-    }
-.submit {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+  }
+  
+.key:active {
+    background-color: #57575a;
+  }
+  
+.btn {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    align-self: center;
+    background-color: #2fc636;
+    color: #ffffff;
+    font-size: 1.25rem;
+    border: none;
     cursor: pointer;
-    }
+  }
+  
+.btn:active {
+  transform: rotateY(2160deg);
+  transition-duration: 2s;
+  transition-timing-function:ease-in ;
+  }
+
+.keyboard-btn active {
+  background-color: #57575a;
+  }
+
+  
